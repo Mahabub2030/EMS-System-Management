@@ -1,4 +1,5 @@
 import App from "@/App";
+import About from "@/pages/About";
 
 import Home from "@/pages/Home";
 
@@ -12,6 +13,10 @@ export const router = createBrowserRouter([
       {
         Component: Home,
         path: "home",
+      },
+      {
+        Component: About,
+        path: "about",
       },
     ],
   },

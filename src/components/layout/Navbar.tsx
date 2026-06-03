@@ -16,10 +16,8 @@ import { ModeToggle } from "./ModeToggler";
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
-  { href: "home", label: "Home", active: true },
-  { href: "features", label: "Features" },
-  { href: "pricing", label: "Pricing" },
-  { href: "about", label: "About" },
+  { href: "/", label: "Home"},
+  { href: "/about", label: "About" },
 ];
 
 export default function Navbar() {
@@ -71,7 +69,7 @@ export default function Navbar() {
                       <NavigationMenuLink
                         href={link.href}
                         className="py-1.5"
-                        active={link.active}
+                        
                       >
                         {link.label}
                       </NavigationMenuLink>
@@ -92,7 +90,7 @@ export default function Navbar() {
                 {navigationLinks.map((link, index) => (
                   <NavigationMenuItem key={index}>
                     <NavigationMenuLink
-                      active={link.active}
+                     
                       href={link.href}
                       className="text-muted-foreground hover:text-primary py-1.5 font-medium"
                     >
